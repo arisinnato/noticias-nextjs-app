@@ -2,7 +2,7 @@ import NewsCard from './components/NewsCard';
 import Noticia from '@app/models/noticias';
 
 async function getNoticias() {
-  const res = await fetch('http://localhost:3000/api/noticias', { cache: 'no-store' });
+  const res = await fetch('http://localhost:3000/noticias', { cache: 'no-store' });
   return res.json();
 }
 
